@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="" href="">
+    <style>
+    
+
+    
+/* Common styles */
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main section */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    flex: 1;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+}
+
+.menu {
+    flex: 2;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.srch {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff7200;
+    color: #000;
+}
+
+/* Content */
+.content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+}
+
+.content .par {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin: 20px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content .cn:hover {
+    background-color: #f3904f;
+}
+
+/* Form */
+.form {
+    max-width: 300px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+}
+.navbar {
+    background-color: #ff7200; /* Orange background color */
+    padding: 10px 0; /* Add padding as needed */
+}
+
+
+.form h2 {
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.form input {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btnn:hover {
+    background: #f3904f;
+}
+
+.form .link {
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.form .link a {
+    color: #ff7200;
+}
+
+/* Icons */
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.icons ion-icon {
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #ff7200;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 30px
+        
+    }
+
+    .menu ul li {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .search {
+        text-align: center;
+        margin-top: 20px;
+        order: -1; /* Placing search before menu on smaller screens */
+    }
+
+    .menu ul li {
+        margin: 0 5px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+.white-border {
+    border: 2px solid white; /* White border */
+    padding: ; /* Add padding as needed */
+}
+.black-color {
+    color: black;
+}
+
+.left-align {
+    text-align: left;
+}
+.left-align {
+    text-align: left;
+}
+
+.black-color {
+    color: black;
+}
+
+.right-align {
+    float: right;
+    position: relative;
+    top: -350px; 
+}
+
+.join-us-left {
+    text-align: left;
+    
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo" style="color: #0e0c0c;">PakeRoze</h2>
+            </div> 
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="jobs.html">JOBS</a></li>
+                <li><a href="contactus.html" id="contact-link">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="search-wrapper white-border">
+                <div class="search">
+                    <div class="white-border">
+                        <input class="srch" type="search" name="" placeholder="Type To text">
+                    </div>
+                    
+
+                    <a href="#"><button class="btn black-color">Search</button></a>
+
+                </div>
+            </div>
+            
+            
+
+        </div> 
+        <div class="content">
+            <h1 class="left-align">Empowering Youth,<br><span>Transforming Futures</span> in <br>Technology</h1>
+
+            <p class="par left-align black-color">Welcome to Pakroze! Your gateway to career advancement and skill <br>development in the dynamic world of IT.<br> At Pakroze, we're dedicated to empowering youth by providing access <br> to current job opportunities and industry-relevant courses. Explore our platform and take <br>the first step towards a successful career in technology!</p>
+
+            <div class="join-us-left">
+                <button class="cn"><a href="#">JOIN US</a></button>
+            </div>
+            
+
+                <div class="form right-align">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+                
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+                
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                </div>
+                
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
